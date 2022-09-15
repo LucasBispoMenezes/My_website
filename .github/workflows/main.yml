@@ -1,0 +1,14 @@
+name: eslint action
+on: 
+  push: 
+    branchs: 
+      - development
+  jobs:
+    eslint: 
+      runs-on: ubuntu-latest
+      steps: 
+        - name:  checkout action
+          uses : action/checkout@V3
+      steps: 
+        - name: install dependenci
+          run:  cd /Fronten
