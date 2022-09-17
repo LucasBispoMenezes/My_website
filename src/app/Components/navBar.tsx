@@ -1,13 +1,15 @@
-import { BiMenuAltRight } from "react-icons/bi";
-import logo from "../img/logo.png";
-import { Ul, Header } from "./css/navbar";
+/* eslint-disable react/react-in-jsx-scope */
+import { ReactElement } from 'react'
+import { BiMenuAltRight } from 'react-icons/bi'
+import logo from '../img/logo.png'
+import { Ul, Header } from './css/navbar'
 const value = {
-    color: "#64fbda",
-    size: "45px",
-};
+  color: '#64fbda',
+  size: '45px'
+}
 
-function NavBar() {
-    return (
+function NavBar (): ReactElement {
+  return (
         <Header>
             <section>
                 <img src={logo} alt="" />
@@ -27,7 +29,7 @@ function NavBar() {
                 </button>
             </section>
         </Header>
-    );
+  )
 }
 
-export default NavBar;
+export default NavBar
