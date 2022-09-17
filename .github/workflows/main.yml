@@ -1,14 +1,15 @@
 name: eslint action
 on: 
   push: 
-    branchs: 
+    branches: 
       - development
-  jobs:
+jobs:
     eslint: 
       runs-on: ubuntu-latest
       steps: 
         - name:  checkout action
           uses : action/checkout@V3
-      steps: 
-        - name: install dependenci
-          run:  cd /Fronten
+        - name: install dependecies
+          run: npm install 
+        - name: init eslint
+          run: npm run lint
