@@ -17,5 +17,6 @@ jobs:
         - name: mensagem de erro ou sucesso
           uses: thollander/actions-comment-pull-request@v1
           with:
-            message: | 
-            ${{steps.eslint.output}}
+            message: |
+              ${{ steps.eslint.output }}
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
