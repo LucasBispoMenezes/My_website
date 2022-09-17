@@ -8,7 +8,7 @@ jobs:
       runs-on: ubuntu-latest
       steps: 
         - name:  checkout action
-          uses : action/checkout@V3
+          uses : actions/checkout@v3
         - name: install dependecies
           run: npm install 
         - name: init eslint
