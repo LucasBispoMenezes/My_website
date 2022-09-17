@@ -14,5 +14,9 @@ jobs:
         - name: init eslint
           id: eslint
           run: npm run lint
-        - name: mergear branch development com produção
-          run: git checkout production && git merge development
+        - name: Merge by labeled
+          uses: devmasx/merge-branch@master
+          with:
+            label_name: 'merged in develop'
+            target_branch: 'develop'
+            github_token: ${{ github.token }}
