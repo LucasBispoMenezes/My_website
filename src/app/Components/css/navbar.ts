@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const Header = styled.header`
 section {
@@ -20,7 +20,7 @@ justify-content: space-between;
 @media (max-width: 800px) {
     height: 100px;
 }
-`;
+`
 const Ul = styled.ul`
 z-index: 0;
 list-style: none;
@@ -40,6 +40,6 @@ opacity: 1;
 span {
     color: #64fbda;
 }
-`;
+`
 
-export  {Ul, Header}
+export { Ul, Header }
