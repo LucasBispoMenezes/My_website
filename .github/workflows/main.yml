@@ -14,15 +14,5 @@ jobs:
         - name: init eslint
           id: eslint
           run: npm run lint
-          continue-on-error: true
-        - name: Annotate Code Linting Results
-          uses: ataylorme/eslint-annotate-action@1.0.4
-          if: always()
-          with:
-            repo-token: '${{ secrets.GITHUB_TOKEN }}'
-            report-json: 'eslint_report.json'
-        - name: Upload ESLint report
-          uses: actions/upload-artifact@v2
-          with:
-            name: eslint_report.json
-            path: eslint_report.json
+        - name: mergear branch development com produção
+          run: git status
