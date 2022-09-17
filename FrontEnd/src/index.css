@@ -72,7 +72,3 @@ select {
         scroll-behavior: auto !important;
     }
 }
-
-* {
-    background-color: #0a192f;
-}
