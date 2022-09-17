@@ -15,4 +15,4 @@ jobs:
           id: eslint
           run: npm run lint
         - name: mergear branch development com produção
-          run: git status
+          run: git checkout main && git merge development
